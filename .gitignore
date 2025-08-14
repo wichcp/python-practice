@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+cat > python-practice/.gitignore << 'EOF'
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.notebook_cache/
+data/
+*.csv
+*.parquet
+*.feather
+*.xlsx
+.env
+*.key
+*.pem
+.DS_Store
+Thumbs.db

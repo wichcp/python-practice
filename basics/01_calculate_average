@@ -1,0 +1,33 @@
+def main():
+
+    calculate_average()
+
+def calculate_average():
+
+    numbers = []
+
+
+    while True:
+        try:
+            s = int(input("type your numbers here: "))
+            numbers.append(s)
+
+
+        except EOFError: #ctlr + d to end
+            print()
+            print(numbers)
+
+            if numbers:
+                average = sum(numbers) / len(numbers)
+                print(f"average = {average}")
+            
+            else:
+                print("No numbers entered yet.")
+
+            break
+        
+        except (ValueError, ZeroDivisionError):
+            pass
+
+
+main()
